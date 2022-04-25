@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Catégories{% endblock %}
+
+{% block body %}
+
+{% for c in categories.findAll() %}
+
+<ul class="list-group list-group-light">
+    <li class="list-group-item"><a class="nav-link" href="#">{{ c.name }}</a></li>
+</ul>
+
+{% endfor %}
+
+{% endblock %}

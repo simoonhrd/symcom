@@ -1,0 +1,7 @@
+html, body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.main_container {
+    min-height: 80vh !important;
+}

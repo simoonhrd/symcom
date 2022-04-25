@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenue sur SymCom{% endblock %}
+
+{% block body %}
+
+{% include '_incs/_slider.html.twig' %}
+
+<div class="container pt-5">
+    <div class="p-5 bg-light">
+        <h1 class="display-3">Bienvenue sur SymCom</h1>
+        <p class="lead">Nos nouveaux composants aux meilleurs prix !</p>
+        <hr class="my-2">
+        <p>Voir nos produits</p>
+        <span class=""><a name="" id="" class="btn btn-primary" href="{{ path('app_product') }}"
+                role="button">PRODUITS</a></span>
+        <p class="lead">
+
+        </p>
+    </div>
+
+    <div class="row mt-5 mx-5">
+        <div class="col-md-4 col-lg-4 col-xs-12 py-5 bg-success text-white text-center"><i class="fa-solid fa-lock fa-3x"></i>
+        <p class="text-white text-center pt-3"><sub>Paiement</sub> <sup>sécurisé</sup></p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xs-12 py-5 bg-warning text-white text-center"><i class="fa-solid fa-check fa-3x"></i>
+        <p class="text-white text-center pt-3">Produits de qualité</p>
+        </div>
+        <div class="col-md-4 col-lg-4 col-xs-12 py-5 bg-primary text-white text-center"><i class="fa-solid fa-truck-fast fa-3x"></i>
+        <p class="text-white text-center pt-3">Livraison rapide assurée</p>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
