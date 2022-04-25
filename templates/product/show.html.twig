@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Le produit {{ product.title }}{% endblock %}
+
+{% block body %}
+
+<div class="container py-5">
+    <div class="card text-center " style="background-color:#fff;">
+        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+            <img src="{{ product.picture }}" class="img-fluid" />
+        </div>
+        <div class="card-header"><a class="text-info" href="">{{ product.category.name }}</a></div>
+        <div class="card-body">
+            <h5 class="card-title fs-2">{{ product.title }}</h5>
+            <p class="card-text">
+                {{ product.content }}
+            </p>
+        <h3 class="text-center fw-bold">{{ product.price }}€</h3>
+            <button type="button" class="btn btn-success"><i class="fa-solid fa-cart-shopping"></i> AJOUTER AU PANIER</button><a href="{{ path('app_product') }}" class="btn btn-light">RETOUR</a>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
